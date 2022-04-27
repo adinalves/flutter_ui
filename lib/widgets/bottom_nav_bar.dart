@@ -12,12 +12,12 @@ class BottomNavBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+      padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
       height: 80,
       color: Colors.white,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween ,
-        children: [
+        children: const [
           BottomNavItem(
             title: "Hoje", 
             svgScr: "assets/icons/calendar.svg",

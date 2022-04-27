@@ -37,7 +37,7 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     var size = MediaQuery.of(context).size;
     return Scaffold(
-      bottomNavigationBar: BottomNavBar(),
+      bottomNavigationBar: const BottomNavBar(),
       body: Stack(
         children: <Widget>[
           Container(
@@ -72,10 +72,10 @@ class HomeScreen extends StatelessWidget {
                     'Boa noite\nAdinê',
                     style: Theme.of(context)
                         .textTheme
-                        .displaySmall
+                        .displaySmall //display1
                         ?.copyWith(fontWeight: FontWeight.w900),
                   ),
-                  SearchBar(),
+                  const SearchBar(),
                   Expanded(
                     child: GridView.count(
                       crossAxisCount: 2,
@@ -100,7 +100,7 @@ class HomeScreen extends StatelessWidget {
                             Navigator.push(
                               context,
                               MaterialPageRoute(builder: (context) {
-                                return DetailsScreen();
+                                return const DetailsScreen();
                               }),
                             );
                           },
@@ -122,4 +122,3 @@ class HomeScreen extends StatelessWidget {
     );
   }
 }
-
